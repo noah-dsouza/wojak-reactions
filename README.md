@@ -34,7 +34,7 @@
   - 😴 Mouth-open / “mouth-breather”  
 
 - Detects **hand gestures**  
-  - ❤️ Heart shape or Korean “finger heart” → *Love / Support*  
+  - ❤️ Heart shape with hands→ *Love / Support*  
   - 🤦 Hands on face or head → *Stressed*  
 
 ---
