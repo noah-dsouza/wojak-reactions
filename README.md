@@ -1,7 +1,9 @@
-# Wojak Reactor
+# 🧠 Wojak Reactor  
+### Real-Time Facial Expression & Hand Gesture Reactions
 
-> Real-time **facial expression** and **hand-gesture** detector that reacts with custom **Wojak emotion images**.  
-> Built purely for fun — runs locally on your webcam using **Python, OpenCV, and MediaPipe**.
+**Wojak Reactor** is a real-time emotion and gesture detection system that reacts with custom **Wojak images**.  
+It uses **OpenCV** for webcam input and **MediaPipe** for facial and hand landmark detection.  
+Built purely for fun, this project helped me explore how real-time computer vision actually works under the hood.
 
 ---
 
@@ -10,40 +12,46 @@
 | Category | Tools / Libraries |
 |-----------|------------------|
 | **Language** | Python 3.11 |
-| **Computer Vision** | [OpenCV](https://opencv.org/) |
-| **Machine Learning Landmarks** | [MediaPipe](https://developers.google.com/mediapipe) |
-| **Math + Data Handling** | NumPy |
-| **Environment** | macOS ARM (M3), Virtualenv |
-| **Version Control** | Git + GitHub |
-| **IDE** | VS Code |
-| **Host** | Local runtime (not web-deployed) |
+| **Computer Vision** | [OpenCV](https://opencv.org/) — video capture, display, image overlays |
+| **Landmark Detection** | [MediaPipe](https://developers.google.com/mediapipe) — facial & hand tracking |
+| **Math & Data Handling** | NumPy — geometric calculations and array processing |
+| **Runtime** | Local webcam session (no cloud or web app) |
 
 ---
 
 ## 💫 Features
 
-- Detects **facial expressions** in real time  
-  - 😐 Neutral  
-  - 😀 Happy / Smiling  
-  - 😂 Laughing  
-  - 😮 Shocked  
-  - 😡 Angry  
-  - 😢 Sad  
-  - 😞 Disappointed  
-  - 😔 Depressed  
-  - 😴 Mouth-open / “mouth-breather”  
+### Facial Expression Detection
+Detects live expressions and maps them to matching Wojak emotions:
+- 😐 **Neutral**  
+- 😡 **Angry**  
+- 😢 **Sad**   
+- 😮 **Shocked**  
+- 😴 **Mouth-breather** — jaw dropped, relaxed expression  
+- 🤦 **Stressed** — head in hands or squinting with tension  
 
-- Detects **hand gestures**  
-  - ❤️ Heart shape with hands→ *Love / Support*  
-  - 🤦 Hands on face or head → *Stressed*  
+### ✋ Hand Gesture Detection
+Recognizes expressive gestures in real time:
+- ❤️ Heart shape with both hands → *Love / Support*  
+- 🤦 Hands covering face → *Stress / Frustration*  
 
 ---
 
-## 🧰 Requirements
+## 🧠 What I’m Learning
+- How **MediaPipe FaceMesh** and **Hands** models track landmarks in real time.  
+- How to compute **angles, distances, and regions** to infer emotion states.  
+- Integrating **OpenCV overlays** (bounding boxes, text, triggers) for live feedback.  
+- Efficiently handling real-time frame updates at ~30 FPS.  
+- How to make local ML pipelines feel interactive and reactive.  
 
-Create a virtual environment and install dependencies:
+---
+
+## 🧰 Setup & Requirements
+
+Create and activate a virtual environment, then install dependencies:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install opencv-python mediapipe numpy
+python3 wojak_reactor.py
