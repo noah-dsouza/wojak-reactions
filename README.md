@@ -1,8 +1,9 @@
 # 🧠 Wojak Reactor  
 ### Real-Time Facial Expression & Hand Gesture Recognition with OpenCV + MediaPipe
 
-**Wojak Reactor** is a real-time emotion and gesture detector that reacts with custom **Wojak emotion images**.  
-It uses **MediaPipe FaceMesh** and **Hands** for landmark tracking, combined with **OpenCV** overlays and geometric rules to classify moods and gestures.
+**Wojak Reactor** is a small project where I explored real-time **emotion** and **gesture** detection.  
+It uses **MediaPipe FaceMesh** and **Hands** for facial and hand landmark tracking, paired with **OpenCV** overlays and simple geometric logic
+No AI model, no fancy training — just math, curiosity, and a bit of chaos to learn how real-time computer vision actually works.
 
 ---
 
