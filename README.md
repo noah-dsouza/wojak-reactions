@@ -14,7 +14,6 @@ It uses **MediaPipe FaceMesh** and **Hands** for landmark tracking, combined wit
 | **Computer Vision** | [OpenCV](https://opencv.org/) — webcam input, live overlays, and alpha blending |
 | **Landmark Detection** | [MediaPipe](https://developers.google.com/mediapipe) — facial & hand landmark tracking |
 | **Math / Geometry** | NumPy + Python `math` — distance, angles, and feature ratios for expression logic |
-| **Smoothing** | `collections.deque` — temporal vote smoothing to stabilize predictions |
 | **Runtime** | Local webcam session (runs offline) |
 
 ---
