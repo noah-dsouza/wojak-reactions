@@ -27,8 +27,8 @@ Detects live expressions and maps them to matching Wojak emotions:
 - 😡 **Angry**  
 - 😢 **Sad**   
 - 😮 **Shocked**  
-- 😴 **Mouth-breather** — jaw dropped, relaxed expression  
-- 🤦 **Stressed** — head in hands or squinting with tension  
+- 😴 **Mouth-breather** 
+- 🤦 **Stressed** 
 
 ### ✋ Hand Gesture Detection
 Recognizes expressive gestures in real time:
