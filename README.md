@@ -32,8 +32,8 @@ Detects live expressions and maps them to matching Wojak emotions:
 
 ### ✋ Hand Gesture Detection
 Recognizes expressive gestures in real time:
-- ❤️ Heart shape with both hands → *Love / Support*  
-- 🤦 Hands covering face → *Stress / Frustration*  
+- ❤️ Heart shape with both hands 
+- 🤦 Hands covering face 
 
 ---
 
